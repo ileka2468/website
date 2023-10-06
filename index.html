@@ -92,7 +92,7 @@
                 </a>
             </div>
             <div class="about-text">
-                <p>Hello! I am William Ileka. An aspiring Software developer, and tech enthusiast. I am a freshman at
+                <p>Hello! I am William Ileka. An aspiring Software developer, and tech enthusiast. I am a sophomore at
                     DePaul University in Chicago, Illinois.</p>
                 <p>During the pandemic I worked as a freelance developer on the Fiverr platform, becoming a top rated
                     seller in the software category, and gaining over 230 4.8+ star ⭐ reviews.</p>
@@ -149,6 +149,17 @@
         <h2 class="heading">Current Projects</h2>
         <!-- Portfolio Content -->
         <div class="portfolio-content">
+
+            <div class="portfolio-box">
+                <img src="./c (4).png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Deployed Church Website</h2>
+                    <a target="_blank" href="https://www.stmargaretschicago.org/">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+            
             <div class="portfolio-box">
                 <img src="./Untitled presentation.png" alt="" class="portfolio-img">
                 <div class="portfolio-overlay">
@@ -505,6 +516,18 @@
     <script src="./swiper-bundle.min.js"></script>
 
     <script src="./main.js"></script>
+
+    <script>
+       const parent = document.getElementsByClassName('portfolio-content')[0];
+       const children = document.querySelector('.portfolio-content').children;
+       const listArray = Array.from(children);      
+
+       if (listArray[0].tagName == "A"){
+        parent.removeChild(parent.firstChild)
+       }
+
+    </script>
+    
 </body>
 
 </html>

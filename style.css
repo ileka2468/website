@@ -585,6 +585,24 @@ iframe, object, embed {
   bottom: 2rem;
   transition: 0.3s;
 }
+
+.logo-background{
+  margin-top: .5em;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: .2em;
+  padding: .5em;
+}
+
+.head{
+  width: 50%;
+  border-radius: 100%;
+  background-color: #546eff;
+  border: none;
+}
+
+
 /* Making Responsive */
 @media (max-width:990px){
   .container{
@@ -663,6 +681,10 @@ iframe, object, embed {
     display: block;
     margin: 1rem 0;
   }
+
+  
+
+
 }
 @media (max-width:635px){
   .about-content {

@@ -8,6 +8,13 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
 }
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Variables */
 :root{
   --main-color:#647bff;
@@ -355,6 +362,21 @@ justify-content: center;
 .services-box p{
   font-size: 0.9rem;
 }
+
+.workbox {
+  margin: 1em;
+  width: 80%;
+}
+
+.workbox li {
+  list-style: inside;
+  margin: 1em;
+  text-align: center;
+  font-size: 14px;
+  text-align: start;
+}
+
+
 /* Portfolio */
 .portfolio-content{
   display: grid;
@@ -652,8 +674,9 @@ iframe, object, embed {
     font-size: 0.825rem;
   }
   .services-content {
-    grid-template-columns: repeat(2,1fr); 
+    grid-template-columns: repeat(1fr); 
   }
+
   .portfolio-box {
     height: 245px;
   }
